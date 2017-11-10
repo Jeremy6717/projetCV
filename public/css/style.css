@@ -1,0 +1,89 @@
+/******************************************************
+******************* GENERAL ***************************
+*******************************************************/
+
+*{
+      box-sizing: border-box;
+      transition-duration: 0.3s;
+}
+
+body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Bitter', serif;
+}
+
+
+h1{
+      font-size: 35px;
+}
+
+
+h2{
+      font-size: 28px;
+}
+
+h3{
+      font-size: 23px;
+}
+
+p{
+      font-size: 18px;
+      font-weight: 200;
+}
+
+/******************************************************
+******************* HEADER ***************************
+*******************************************************/
+
+header{
+      width: 100%;
+      height: 5rem;
+      background-color: #607D8B;
+      position: relative;
+}
+
+.navHeader{
+      position: relative;
+}
+
+.navHeader li{
+      display: inline-block;
+      list-style: none;
+      justify-content: space-between;
+}
+
+
+.fa-shopping-cart{
+      height: 20px;
+      width: 30px;
+}
+
+
+.fa-facebook-square, .fa-linkedin-square, .fa-github-square{
+      height: 20px;
+      width: 20px;
+}
+
+/******************************************************
+******************* HOME ***************************
+*******************************************************/
+
+
+
+
+/******************************************************
+******************* PRODUCT ***************************
+*******************************************************/
+
+.fa-star{
+      color: #FDD835;
+}
+
+.fa-star-o{
+      color: grey;
+}
+
+
+      /************************************
+      ************ IMAGE GALLERY *********/

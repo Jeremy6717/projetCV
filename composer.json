@@ -1,0 +1,16 @@
+{
+    "name": "jeremy/projet-cv",
+    "description": "cv de jeremy deumer",
+    "type": "projet",
+    "authors": [
+        {
+            "name": "jeremy deumer",
+            "email": "jeremydeumer@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.0",
+        "social-links/social-links": "^1.13"
+    }
+}

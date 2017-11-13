@@ -13,23 +13,58 @@ body{
       font-family: 'Bitter', serif;
 }
 
+/******************************************************
+********************************************************
+********************************************************
+******************* MOBILE VERSION *********************
+********************************************************
+********************************************************
+*******************************************************/
+
+
+h1, h2, h3, h4, h5, p{
+      text-align: center;
+}
+
+h1, h2, h3{
+      font-weight: 800;
+}
+
 
 h1{
-      font-size: 35px;
+      font-size: 30px;
+
 }
 
 
 h2{
-      font-size: 28px;
+      font-size: 21px;
 }
 
 h3{
-      font-size: 23px;
+      font-size: 18px;
 }
 
-p{
+h4{
+      font-size: 21px;
+}
+
+
+h5{
       font-size: 18px;
+      line-height: 1.8rem;
+}
+
+
+p{
+      font-size: 14px;
       font-weight: 200;
+      line-height: 1.5rem;
+}
+
+
+article{
+      margin-bottom: 3rem;
 }
 
 /******************************************************
@@ -37,26 +72,59 @@ p{
 *******************************************************/
 
 header{
-      width: 100%;
+      width: auto;
       height: 5rem;
       background-color: #607D8B;
       position: relative;
+      margin-bottom: 4rem;
 }
 
-.navHeader{
-      position: relative;
+.header-container{
+      display: inline-flex;
 }
 
-.navHeader li{
-      display: inline-block;
+nav{
+      text-decoration: none;
+}
+
+
+.menu a, ul, li{
+      text-decoration: none;
+}
+
+
+.deskopMenu ul, .deskopMenu li{
+      text-decoration: none;
       list-style: none;
-      justify-content: space-between;
+}
+
+
+ aside{
+      display: inline-flex;
+      width: 100%;
+}
+
+
+
+
+
+
+
+.socialAndCart{
+      display: inline-table;
+      position: absolute;;
+}
+
+
+.social{
+      float: right;
 }
 
 
 .fa-shopping-cart{
       height: 20px;
       width: 30px;
+      float: right;
 }
 
 
@@ -64,6 +132,52 @@ header{
       height: 20px;
       width: 20px;
 }
+
+
+
+/******************************************************
+******************* FOOTER ***************************
+*******************************************************/
+
+footer{
+      width: auto;
+      height: 10rem;
+      background-color:#607D8B;
+}
+
+footer a{
+      text-decoration: none;
+      display: inline-flex;
+      margin-top: 1rem;
+      color: white;
+}
+
+footer li{
+      display: inline-flex;
+}
+
+
+footer p{
+      font-size: 15px;
+      color: white;
+      margin-right: 0.5rem;
+}
+
+.copyright, .socialshare{
+      display: block;
+      position: relative;
+}
+
+.copyright p{
+      text-align: center;
+}
+
+
+footer aside{
+      display: inline-flex;
+      margin-left: 0.5rem;
+}
+
 
 /******************************************************
 ******************* HOME ***************************
@@ -76,14 +190,300 @@ header{
 ******************* PRODUCT ***************************
 *******************************************************/
 
+h1{
+      margin-bottom: 2rem;
+}
+
+
+.star{
+      margin-left: 15%;
+}
+
+
 .fa-star{
-      color: #FDD835;
+      color: FFD108;
+
 }
 
 .fa-star-o{
       color: grey;
 }
 
+.stock{
+      display: inline-flex
+      ;
+}
+
+.fa-check{
+      display: inline-block;
+      color: 006600;
+      margin-right: 0.3rem;
+}
+
+
+
+.delivery{
+      margin-bottom: 2rem;
+}
+
+
+.delivery i{
+      margin-right: 0.5rem;
+}
+
+
+.productInfoHeader{
+      display: inline-flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-left: -5%;
+}
+
 
       /************************************
       ************ IMAGE GALLERY *********/
+.imgProduct .one{
+      display: block;
+      margin: auto;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+}
+
+.infoUnderphoto{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+}
+
+
+.priceInfo{
+      width: 10rem;
+      height: 5rem;
+      background-color: FF9505;
+      margin-left: 20%;
+      border-radius: 10%;
+}
+
+
+.price{
+      text-align: center;
+      font-size: 25px;
+      padding-top: 20%;
+}
+
+.infoUnderphoto button{
+      height: 4rem;
+      width: 10rem;
+      margin-right: 20%;
+      border: none;
+      background-color: FF9505;
+
+}
+
+
+
+      /************************************
+      ************ OFFER *********/
+
+.offer h3{
+      margin-bottom: 0.5rem;
+}
+
+.offer {
+      margin-bottom: 1rem;
+}
+
+
+      /************************************
+      ************ MAIN FEATURES *********/
+
+.mainFeatures h3{
+      margin-bottom: 1rem;
+}
+
+
+.check{
+      width: 10rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 3rem;
+}
+
+.check p{
+      text-align: left;
+      font-size: 17px;
+}
+
+
+
+      /***************************************
+      ************ FULL  DESCRIPTION *********/
+
+
+.formation h4{
+      margin-bottom: 1rem;
+}
+
+.formation h5{
+      text-decoration: underline;
+}
+
+.formation section{
+      margin-bottom: 1.5rem;
+}
+
+.formation p{
+      margin-top: 0.5rem;
+}
+
+.formation i, .professionalExperiences i {
+      margin-right: 0.5rem;
+}
+
+
+.informatique img{
+      display: block;
+      margin: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+}
+
+
+.informatique h4, .professionalExperiences h4{
+      margin-bottom: 1rem;
+}
+
+
+.informatique h5, .professionalExperiences h5{
+      margin-top: 0.5rem;
+      text-decoration: underline;
+}
+
+
+.informatique ul, li{
+      list-style: square inside;
+      font-size: 15px;
+      line-height: 1rem;
+      text-align: left;
+      padding-left: 10%;
+}
+
+.listInfoInformatique, .taskList{
+      width: 330px;
+      margin: auto;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      line-height: 0.5rem;
+}
+
+
+
+.listInfoInformatique li, .taskList li{
+      line-height: 1.5rem;
+}
+
+
+
+
+
+/******************************************************
+******************* CONTACT***************************
+*******************************************************/
+
+iframe{
+      margin-bottom: 3rem;
+}
+
+h2{
+      margin-bottom: 2rem;
+}
+
+.contactInfos p{
+      font-size: 14px;
+      line-height: 3rem;
+}
+
+.contactForm{
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.contactForm label, .contactForm input, .contactForm button{
+      margin-bottom: 1.5rem;
+}
+
+.inputContact{
+      width: 20rem;
+      height: 15rem;
+}
+
+.g-recaptcha{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+}
+
+.contactForm button{
+      border: none;
+      background-color: #f39c12;
+      width: 8rem;
+      height: 3rem;
+}
+
+
+.confirmMessage{
+      text-align: center;
+      padding-top: 28%;
+      height: 8rem;
+      width: 20rem;;
+      background-color: #27ae60;
+      margin-bottom: 3rem;
+}
+
+
+/******************************************************
+********************************************************
+********************************************************
+******************* DESKOP VERSION *********************
+********************************************************
+********************************************************
+*******************************************************/
+@media screen and (min-width:800px) {
+
+
+            /***************************************
+            ************ FULL  DESCRIPTION *********/
+
+.deskopMenu{
+      display: contents;
+      position: relative;
+}
+
+
+.deskopMenu a{
+      color: red;
+      text-decoration: none;
+}
+
+.deskopMenu li{
+      display: inline-block;
+      list-style: none;
+      justify-content: space-between;
+}
+
+
+/***************************************
+************ LEGAL MENTIONS ************
+*****************************************/
+
+.mainLegalMentions h1{
+      font-size:
+}
+
+
+
+
+}

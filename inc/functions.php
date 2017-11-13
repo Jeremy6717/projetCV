@@ -8,18 +8,18 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 
-function sendEmail($to, $subject, $htmlContent, $textContent){
+function sendEmail($subject, $htmlContent){
 
       global  $config;  // on rend local les infos du fichier $config
 
       $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
       try {
             //Server settings
-            $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+            //$mail->SMTPDebug = 2;                                 // décommenter en cas de non fonctionnement de l'envois (de base à 2, on peut mettre 4 pour avoir plus d'infos)
             $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host = $config['MAIL_HOST'];  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'jeremudeumer@gmail.com';                 // SMTP username
+            $mail->Username = $config['MAIL_USERNAME'];                 // SMTP username
             $mail->Password = $config['MAIL_PASSWORD'];                           // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
@@ -34,11 +34,8 @@ function sendEmail($to, $subject, $htmlContent, $textContent){
             );
 
             //Recipients
-            $mail->setFrom($config['MAIL_USERNAME'], 'Jérémy');
-            $mail->addAddress('jeremyd@yopmail.com', 'YOP');     // Add a recipient
-            $mail->addReplyTo('info@example.com', 'Information');
-            $mail->addCC('cc@example.com');
-            $mail->addBCC('bcc@example.com');
+            $mail->setFrom('jeremydeumer@gmail.com', 'Jérémy');
+            $mail->addAddress('jeremydeumer@gmail.com', 'Jérémy');     // Add a recipient
 
             //Attachments
             // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
@@ -46,14 +43,21 @@ function sendEmail($to, $subject, $htmlContent, $textContent){
 
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'Here is the subject';
-            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+            $mail->Subject = $subject;
+            $mail->Body    = '<b>'.$htmlContent.'</b>';
 
             $mail->send();
-            echo 'Message has been sent';
+
+
+            //if echo 'Message has been sent'
+            // => send true if message send
+            $emailSent = true;
+
+
       } catch (Exception $e) {
-            echo 'Message could not be sent.';
-            echo 'Mailer Error: ' . $mail->ErrorInfo;
+      //echo 'Message could not be sent.';
+      //echo 'Mailer Error: ' . $mail->ErrorInfo;
+      $emailSent = false;
+      $emailError = $mail->ErrorInfo;
       }
 }

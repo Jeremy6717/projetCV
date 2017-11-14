@@ -13,6 +13,9 @@ body{
       font-family: 'Bitter', serif;
 }
 
+
+
+
 /******************************************************
 ********************************************************
 ********************************************************
@@ -79,11 +82,50 @@ header{
       margin-bottom: 4rem;
 }
 
+
+
+
+
+
+
+   /*******************************
+   ********MOBILE MENU ************/
+
+
+
+
+
+
 .header-container{
       display: inline-flex;
+      width: 100%;
+      margin-top: 2%;
 }
 
-nav{
+
+
+.bg-light {
+    background-color: #607D8B!important;
+}
+
+
+.nav-item{
+      list-style: none;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+      color: black;
+}
+
+a {
+    color: black;
+ }
+
+
+
+
+/*nav{
       text-decoration: none;
 }
 
@@ -93,19 +135,12 @@ nav{
 }
 
 
-.deskopMenu ul, .deskopMenu li{
-      text-decoration: none;
-      list-style: none;
-}
 
 
  aside{
       display: inline-flex;
       width: 100%;
-}
-
-
-
+}*/
 
 
 
@@ -118,20 +153,23 @@ nav{
 
 .social{
       float: right;
+      justify-content: space-between;
 }
 
 
 .fa-shopping-cart{
-      height: 20px;
-      width: 30px;
+      font-size: 1rem;
       float: right;
+      margin-right: 1rem;
 }
+
 
 
 .fa-facebook-square, .fa-linkedin-square, .fa-github-square{
-      height: 20px;
-      width: 20px;
+      font-size: 1.3rem;
+      margin-right: 0.5rem;
 }
+
 
 
 
@@ -141,19 +179,37 @@ nav{
 
 footer{
       width: auto;
-      height: 10rem;
+      height: auto;
       background-color:#607D8B;
+}
+
+#footerContent{
+      padding-top: 1rem;
 }
 
 footer a{
       text-decoration: none;
       display: inline-flex;
-      margin-top: 1rem;
       color: white;
+      margin-right: 0.3rem;
 }
 
 footer li{
       display: inline-flex;
+}
+
+
+.navFooter{
+      width: 100%;
+      margin-bottom: 2rem;
+      margin-left: 14%;
+}
+
+
+.navFooter ul{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
 }
 
 
@@ -163,10 +219,32 @@ footer p{
       margin-right: 0.5rem;
 }
 
-.copyright, .socialshare{
+
+.copyright{
       display: block;
       position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-bottom: 1rem;
 }
+
+ .socialshare{
+      display: inline-flex;
+      width: 100%;
+      margin-left: auto;
+}
+
+
+.socialshare p{
+      display: inline-block;
+      margin-left: auto;
+}
+
+.socialshare .socialLinksFooter{
+      display: inline-flex;
+      margin-right: auto;
+}
+
 
 .copyright p{
       text-align: center;
@@ -174,7 +252,7 @@ footer p{
 
 
 footer aside{
-      display: inline-flex;
+      display: block;
       margin-left: 0.5rem;
 }
 
@@ -210,8 +288,9 @@ h1{
 }
 
 .stock{
-      display: inline-flex
-      ;
+      display: inline-flex;
+      margin-left: auto;
+      margin-right: auto;
 }
 
 .fa-check{
@@ -257,10 +336,11 @@ h1{
 
 
 .priceInfo{
-      width: 10rem;
-      height: 5rem;
+      width: 7rem;
+      height: 3.5rem;
       background-color: FF9505;
       margin-left: 20%;
+      margin-right: 5%;
       border-radius: 10%;
 }
 
@@ -268,22 +348,29 @@ h1{
 .price{
       text-align: center;
       font-size: 25px;
-      padding-top: 20%;
+      padding-top: 15%;
 }
 
 .infoUnderphoto button{
       height: 4rem;
-      width: 10rem;
+      width: 12rem;
       margin-right: 20%;
       border: none;
       background-color: FF9505;
+      font-size: 1rem;
 
+}
+
+
+.fa-shopping-basket{
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
 }
 
 
 
       /************************************
-      ************ OFFER *********/
+      ************ OFFER ****************/
 
 .offer h3{
       margin-bottom: 0.5rem;
@@ -291,6 +378,14 @@ h1{
 
 .offer {
       margin-bottom: 1rem;
+}
+
+
+      /************************************
+      ************ DELIVERY****************/
+
+.fa-truck{
+      font-size: 1.5rem;
 }
 
 
@@ -306,13 +401,23 @@ h1{
       width: 10rem;
       margin-left: auto;
       margin-right: auto;
-      padding-left: 3rem;
+      padding-left: 2.5rem;
 }
+
+
+
+.fa-check{
+      font-size: 1.5rem;
+}
+
 
 .check p{
       text-align: left;
       font-size: 17px;
 }
+
+
+
 
 
 
@@ -360,6 +465,8 @@ h1{
 }
 
 
+
+
 .informatique ul, li{
       list-style: square inside;
       font-size: 15px;
@@ -369,7 +476,7 @@ h1{
 }
 
 .listInfoInformatique, .taskList{
-      width: 330px;
+      width: 450px;
       margin: auto;
       margin-top: 0.5rem;
       margin-bottom: 1rem;
@@ -384,14 +491,26 @@ h1{
 
 
 
+.html5Css3Icon{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 185px;
+}
+
+
+.html5Css3Icon img{
+      display: inline-flex;
+}
 
 
 /******************************************************
 ******************* CONTACT***************************
 *******************************************************/
-
-iframe{
-      margin-bottom: 3rem;
+#map {
+        height: 400px;
+        width: 100%;
+        margin-bottom: 3rem
 }
 
 h2{
@@ -434,14 +553,25 @@ h2{
 }
 
 
-.confirmMessage{
+.alert-success{
       text-align: center;
-      padding-top: 28%;
-      height: 8rem;
-      width: 20rem;;
+      padding-top: 6%;
+      height: 3rem;
+      width: 18rem;
       background-color: #27ae60;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
 }
+
+
+.alert-failed{
+      text-align: center;
+      padding-top: 6%;
+      height: 3rem;
+      width: 18rem;
+      background-color: #e74c3c;
+      margin-bottom: 2rem;
+}
+
 
 
 /******************************************************
@@ -451,28 +581,88 @@ h2{
 ********************************************************
 ********************************************************
 *******************************************************/
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
 
 
-            /***************************************
-            ************ FULL  DESCRIPTION *********/
+
+/******************************************************
+******************** HEADER **************************
+******************************************************/
 
 .deskopMenu{
       display: contents;
       position: relative;
+      width: 100%;
+      margin-left: -3rem;
 }
 
 
-.deskopMenu a{
-      color: red;
-      text-decoration: none;
-}
+
+
 
 .deskopMenu li{
       display: inline-block;
-      list-style: none;
       justify-content: space-between;
 }
+
+
+
+
+.deskopMenu a{
+      margin: 0;
+}
+
+
+
+.deskopMenu ul, li, a{
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+}
+
+
+
+
+.socialAndCart{
+      display: inline-table;
+      position: absolute;;
+}
+
+
+.social{
+      float: right;
+      justify-content: space-between;
+}
+
+
+.fa-shopping-cart{
+      font-size: 2rem;
+      float: right;
+      margin-right: 1rem;
+}
+
+
+
+.fa-facebook-square, .fa-linkedin-square, .fa-github-square{
+      font-size: 2rem;
+      margin-right: 0.5rem;
+}
+
+
+
+.fa-facebook-square:hover, .fa-linkedin-square:hover, .fa-github-square:hover{
+      color: red;
+}
+
+
+
+
+            /***************************************
+            ************ FULL  DESCRIPTION *********/
+.listInfoInformatique li, .taskList li{
+      color: black;
+}
+
 
 
 /***************************************
